@@ -10,7 +10,7 @@ Elas poderão inserir as seguintes informações:
 assédio em lugares públicos; violência obstétrica, perseguição (com ou sem ameaça explícita)**.
 
 * categorias inspiradas no aplicativo clique 180 (http://clique180.org.br/cms/55)
-** categorias acrescentadas pelo presente projeto
+**  categorias acrescentadas pelo presente projeto
 
 2) local em que sofreram a violência: as usuárias poderão selecionar em um mapa os locais nos quais sofreram violência: especificar se esse lugar é sua residência; seu local de trabalho; casas de parentes, amigos, conhecidos; ou se é um lugar público. 
 

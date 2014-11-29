@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<tree><title>Arvore</title><description>Teste</description><branch id="1.1"><content>Bom?</content></branch><branch id="1.2"><content>Ruim?</content></branch><branch id="1"><content>Tudo bem?</content><fork target="1.1">Sim </fork><fork target="1.2">Nao</fork></branch><revision>xml/tree1417004340.xml.1417004351</revision><revision>xml/tree1417004340.xml.1417004367</revision><revision>xml/tree1417004340.xml.1417004373</revision></tree>

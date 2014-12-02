@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logos/logo.png"/></a>
+                <a  class="navbar-brand page-scroll" href="#page-top"><img src="img/logos/logo.png" class="logo"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,24 +18,23 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li> 
-
-                        <a class="page-scroll" href="#meusdireitos">Meus Direitos</a>
-                    </li>
                     <li>
-                        <a class="page-scroll" href="#direitodesrespeitado">Direito desrespeitado</a>
+                        <a class="page-scroll" href="#nossoobjetivo">Nosso <br> Objetivo</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#violenciamulher">Violência</a>
+					 <li>
+                        <a class="page-scroll" href="#violenciamulher">O que é violência <br>contra a mulher</a>
                     </li>
-                    <li>
+					<li>
                         <a class="page-scroll" href="#anonimato">Anonimato</a>
                     </li>
 					<li>
-                        <a class="page-scroll" href="#mapa">Mapa de Violência</a>
+                        <a class="page-scroll" href="#direitodesrespeitado">Depoimentos</a>
+                    </li>
+					<li> 
+                        <a class="page-scroll" href="#meusdireitos">Quem somos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contato">Contato</a>
+                        <a class="page-scroll" href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>

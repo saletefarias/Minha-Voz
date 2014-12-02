@@ -4,6 +4,16 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.logo {
+  width:180px;
+  height:140px;
+}
+
+.seta
+{
+
+}
+
 .text-muted {
     color: #777;
 }
@@ -79,11 +89,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     border-color: #f6bf01;
     color: #fff;
-<<<<<<< HEAD
-    background-color: #fec503;
-=======
     background-color: #660033;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
 }
 
 .btn-primary:active,
@@ -118,41 +124,25 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 10px 5px;
-<<<<<<< HEAD
-    border-color: #fed136;
-=======
     border-color: #666666;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-<<<<<<< HEAD
-    background-color: #fed136;
-}
-
-=======
     background-color: #CC0066;
 }
 
 /*botoes centrais ativos*/
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-<<<<<<< HEAD
-    border-color: #f6bf01;
-    color: #fff;
-    background-color: #fec503;
-=======
     border-color: #CC0066;
     color: #fff;
     background-color: #990033;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
 }
 
 .btn-xl:active,
@@ -188,6 +178,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+	font-family: Arial,Montserrat,"Helvetica Neue",Helvetica,sans-serif;
 }
 
 .navbar-default .navbar-brand {
@@ -199,26 +190,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-<<<<<<< HEAD
-    color: #fec503;
-=======
     color: #CC0066;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
 }
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
 }
 
-<<<<<<< HEAD
-.navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-=======
 /*toggle do banner*/
 .navbar-default .navbar-toggle {
     border-color: #fed136;
@@ -227,16 +205,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #990033;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-<<<<<<< HEAD
-    background-color: #fed136;
-=======
     background-color: #990033 ;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
 }
 
 .navbar-default .nav li a {
@@ -244,27 +217,6 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-<<<<<<< HEAD
-    color: #fff;
-}
-
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
-    outline: 0;
-    color: #fed136;
-}
-
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color: #fed136;
-}
-
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #fec503;
-=======
     color: #CC0066;
 }
 
@@ -288,53 +240,34 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     background-color:#990033;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
 }
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 50px 0;
         border: 0;
         background-color: transparent;
-<<<<<<< HEAD
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-=======
         -webkit-transition: padding .2s;
         -moz-transition: padding .2s;
         transition: padding .2s;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
     }
 
     .navbar-default .navbar-brand {
         font-size: 2em;
-<<<<<<< HEAD
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-=======
         -webkit-transition: all .2s;
         -moz-transition: all .2s;
         transition: all .2s;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
     }
 
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
 
-<<<<<<< HEAD
-    .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #222;
-=======
 /*navbar grande - fundo estilo banner */
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color:#FF99FF;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -344,11 +277,7 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
-<<<<<<< HEAD
-    color: #fff;
-=======
     color: #CC0066;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
     background-attachment: scroll;
     background-image: url(../img/header-bg.jpg);
     background-position: center center;
@@ -375,8 +304,8 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
+    font-family: Verdana,Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 10px;
     font-weight: 700;
     line-height: 50px;
 }
@@ -399,14 +328,11 @@ header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 700;
         line-height: 75px;
-<<<<<<< HEAD
-=======
         color:#666666;
         text-shadow: 0 0 2px #fff;
->>>>>>> 07c9f66cb17f67a441dd96e7d709a9fb4fb85461
     }
 }
 
@@ -514,7 +440,7 @@ section h3.section-subheading {
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
-    }
+    } 
 }
 
 .timeline {

@@ -3,24 +3,21 @@ try {
 	$dbConnection = new PDO("mysql:host=localhost;dbname=minhavoz","root","Root");
 	$dbConnection->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 	$dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 	
+	global $dbConnection;
 	
- if(isset($_POST['id_texto']))
+ if(isset($_POST['id_assunto']))
  {
-    echo "ENTREIIIIIIIIIIIIIIIIIII";
-		global $dbConnection;
 		try {
-				$inserir = $dbConnection->prepare("INSERT desabafos usuarios(assunto,texto,longitude, latitude) VALUES (:assunto, :texto, :longitude,:latitude)");
+				$inserir = $dbConnection->prepare("INSERT into desabafos(assunto,texto) VALUES (:assunto, :texto)");
 				
+				$inserir->bindParam(":texto", $_POST['id_texto'],PDO::PARAM_STR);
+				$inserir->bindParam(":assunto", $_POST['id_assunto'],PDO::PARAM_STR);
 		
-				$inserir->bindParam(":assunto", $_usuario, PDO::PARAM_STR);
-				$inserir->bindParam(":texto", $_hash, PDO::PARAM_STR);
-				$inserir->bindParam(":longitude", $_tipo, PDO::PARAM_STR);
-				$inserir->bindParam(":latitude", $_tipo, PDO::PARAM_STR);
-				
+			
 				if ($inserir->execute()) {
-					
-				  echo "Dados inseridos com sucesso";
+				  echo "Desabafo inseridos com sucesso";
 				}
 				else {
 				 echo "Os dados não foram inseridos com sucesso.";
@@ -29,13 +26,10 @@ try {
 		}
 		catch (PDOException $error) {
 			echo "Ocorreu um erro inesperado.";
+			echo $error;
 		}
 
-	}  
-	
-	
-	
-	
+	}  	
 }
 catch (PDOException $e) {
 	echo "O site está indisponível no momento. Por favor, tente novamente mais tarde";
@@ -68,7 +62,7 @@ catch (PDOException $e) {
             <div class="intro-text">
                 <div class="intro-lead-in">Seja bem-vinda!</div>
                 <div class="intro-heading">Aqui escutamos e respeitamos você!</div>
-                <a href="#questionnaire" class="page-scroll btn btn-xl" >Iniciar Diagnóstico de Análise</a>
+                <a href="#questionnaire" class="page-scroll btn btn-xl" >Acho Que Sofri Violência e Agora?</a>
             </div>
         </div>
     </header>
@@ -109,7 +103,7 @@ catch (PDOException $e) {
                     </span>
                     <h4 class="service-heading">Desabafo</h4>
 					<br>
-                    <a class="page-scroll" href="#desabafo"><p class="text-muted">FAZER A DESCRIÇÃO PARA O DESABAFO</p></a>
+                    <a class="page-scroll" href="#desabafo"><p class="text-muted">FAZER UMA PEQUENA DESCRIÇÃO PARA O DESABAFO</p></a>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -117,8 +111,8 @@ catch (PDOException $e) {
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Desabafo de Outras Mulheres</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>-->
+                    <a class="page-scroll" href="#desabafosdeoutrasmulheres"><p class="text-muted">FAZER UMA PEQUENA DESCRIÇÃO PARA O FÓRUM</p></a>
+                </div>
             </div>
         </div>
     </section>
@@ -138,25 +132,28 @@ catch (PDOException $e) {
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/projetos/click180.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Alguma coisa</h4>
-                                    <h4 class="subheading">Doméstica<h4>
+                                    <h4>Click 180</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">DESCRIÇÃO</p>
+                                    <p class="text-muted">
+									Informações sobre os tipos de violência contra as mulheres; 	
+                                    <br>Uma ferramenta colaborativa para mapear os locais da cidade que oferecem riscos às mulheres. 	
+									
+									</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/projetos/rede.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Alguma Coisa</h4>
+                                    <h4>Rede de enfrentamento de violência contra a mulher</h4>
                                     <h4 class="subheading">Física</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -417,66 +414,32 @@ catch (PDOException $e) {
 	</section> <!-- fim do anonimato-->
 	
     <!-- Team Section -->
-    <section id="mapa" class="bg-light-gray">
+    <section id="nossoobjetivo" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Quem Somos</h2>
-                    <h3 class="section-subheading text-muted">Descrição</h3>
+                    <h2 class="section-heading">Nosso Objetivo</h2>
                 </div>
+				
+					  
+			  <p class="large text-muted">
+			     Bem vindo ao minha voz. Somos uma iniciativa que pretende assegurar a integridade e o bem estar psicológico, moral 
+			     e físico relacionados à questão de gênero.</p>
+             
+			  <p class="large text-muted">
+				 Também buscamos promover a conscientização sobre os 
+			     direitos que envolvem questões de genero.
+              </p>
+			 
+			  <p class="large text-muted">
+				Isso significa, em primeiro lugar, nosso compromisso com o bem estar das mulheres, mas não só delas. 
+				Todas as pessoas, independente de sua opção sexual ou sexo, são bem vindas.
+			  </p>
+			  
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Daniela</h4>
-                        <p class="text-muted">OCUPACAO</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Rafael</h4>
-                        <p class="text-muted">OCUPACAO</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Salete</h4>
-                        <p class="text-muted">OCUPACAO</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">DESCRIÇÃO DESSA PARTE</p>
-                </div>
-            </div>
+           
+        </div>
+           
         </div>
     </section>
 
@@ -486,34 +449,33 @@ catch (PDOException $e) {
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/logos/apoio1.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/logos/apoio2.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/logos/apoio3.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/logos/apoio4.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </aside>
 
-    <section id="contato">
+      <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contato</h2>
-                    <h3 class="section-subheading text-muted">Caso tenha alguma sugestão, crítica ou elogio entre em contato conosco!</h3>
                 </div>
             </div>
             <div class="row">
@@ -522,28 +484,28 @@ catch (PDOException $e) {
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Seu nome *" id="name" required data-validation-required-message="Por favor, insira o seu nome.">
+                                    <input type="text" class="form-control" placeholder="Seu nome*" id="name" required>
+                                      <p class="help-block"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Seu email *" id="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Seu email *" id="email" required data-validation-required-message="Por favor insira o seu email.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Seu telefone*" id="phone" required data-validation-required-message="Por favor, insira seu número de telefone.">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Sua mensagem *" id="message" required data-validation-required-message="Por favor, insira a sua mensagem."></textarea>
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Enviar mensagem</button>
+                                <button class="btn btn-xl">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -556,14 +518,72 @@ catch (PDOException $e) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Questionário</h2>
+                   
+				   <h2 class="section-heading">Conte-nos o que aconteceu com você</h2>
+					
+					<h3 class="section-subheading text-muted">
+					 "Essa vergonha não é sua
+					  Essa dor não é só sua
+                      Mas o corpo é seu, a vida é sua, as escolhas são suas"</h3>
+					  
                     <h3 class="section-subheading text-muted">Preservar sua identidade é um direito seu. Não o violaremos sob nenhuma
 					hipotese. Voce é livre para voltar se sentir necessidade e se um dia quiser, fazer 
 					algo a respeito. Estaremos aqui para isso.</h3>
+					
                 </div>
             </div>
          
-	 	<!-- Button trigger modal -->
+	  <div class="row">
+              <p class="large text-muted">Lembre-se: você não está sozinha. Se você está passando por um momento difícil, está sofrendo violência, 
+			  estamos aqui para ajudar, escutar e compreender o que você está passando.</p>
+			  
+			  <p class="large text-muted">
+			  Busque ajuda, converse a respeito do acontecido com pessoas de sua confiança. 
+			  Infelizmente, a violência contra a mulher acontece com muitas de nós. 
+			  O primeiro passo para sair da situação e ajudar a acabar com a violência contra a mulher é 
+			  cuidar de si mesma. Procure ficar bem e segura tanto física como psicologicamente. 
+			  Busque os serviços de apoio (listados em...).</p>
+			  
+			  <p class="large text-muted">
+			  Um outro passo importante é dar seu apoio a projetos que lutam pelo fim da violência contra a mulher.
+			  Se possível, responda as perguntas desse site; se quiser, conte sua história na seção depoimentos.
+			  Nós garantimos que ninguém saberá quem é você e que é você quem está contando essa história.</p>
+			  
+			  <p class="large text-muted">
+			  Você pode também entrar em contato com outras mulheres que estão passando pelo mesmo tipo de problema que você.
+			  Um passo importante para sair da sua situação é conversar com pessoas que estão passando por situações parecidas, 
+			  isso ajuda a entender que a culpa do que está acontecendo não é sua, que há uma saída para o problema,
+			  que é possível viver uma vida melhor, sem dor e violência. Você sempre tem alternativas. </p>
+			  
+			  <p class="large text-muted">Conversar com mulheres que já passaram por isso ou estão passando nos dá esperança de que é possível superar a dor, o medo,
+			  a humilhação, a vergonha, o receio de sofrer ainda mais violência, de não acreditarem ou duvidarem do que você está sofrendo, 
+			  de julgarem seu comportamento ou acharem que o que aconteceu não é nada demais, ou mesmo que o que aconteceu é sua culpa. 
+			  Lembre-se: a culpa pela violência contra a mulher NUNCA é da mulher, não importa a roupa que você estava usando,
+			  o que você estava fazendo, onde você estava, se a pessoa que cometeu violência é um parente ou mesmo companheiro. 
+			  Não existe um “bom motivo” que justifique a violência contra a mulher.</p>
+			  
+			   <p class="large text-muted">
+			   Faça parte dessa luta pelo fim da violência contra a mulher. Se você tem uma história sobre violência para contar, 
+			   se aconteceu com você ou com alguém que você conhece, responda as perguntas em (ljahsdflal),
+			   conte a história em (alfdnalenonasd). Seus dados serão tratados de forma anônima, ninguém irá 
+			   te procurar para fazer uma denúncia formal, você não será obrigada a nada. </p>
+			   
+			   <p class="large text-muted">
+			   Mas responder às perguntas e contar a sua história seguir será importante para entender melhor
+			   o que está acontecendo, como e em que lugares é possível pedir ajuda, o que é possível fazer
+			   para acabar com o seu sofrimento. Ao responder essas perguntas, você também estará dando 
+			   uma ajuda muito importante para o fim da violência contra a mulher.
+			   </p>
+			   
+			  <p class="large text-muted">
+			   Quando se entende melhor quais os tipos de violência ocorrem, e como elas ocorrem, 
+			   o poder público consegue pensar e oferecer programas de proteção à mulher e ações que 
+			   irão proteger e assegurar o bem estar físico e psicológico de todas as mulheres brasileiras. 
+			   </p>
+			   
+			   <p class="large text-muted">Ajudem-nos a vencer essa batalha!!!</p>
+			</div>
+			
 		
 		
       
@@ -611,7 +631,7 @@ catch (PDOException $e) {
 			</label>
   </div>
 </div>-->
-<br>
+
 <!-- Multiple Radios -->
 		<!--<div class="control-group">
 			<label class="control-label" for="radios">Idade</label>
@@ -640,7 +660,7 @@ catch (PDOException $e) {
 			</div>
 </div>-->
 
-<br>
+
 <!-- Multiple Radios -->
 	<!--<div class="control-group">
 		<label class="control-label" for="radios">Você acredita estar passando, ou já ter passado em algum momento
@@ -683,7 +703,7 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
+
 <!-- Multiple Radios -->
 <!--<div class="control-group">
 	<label class="control-label" for="radios">Qual foi a intensidade da agressão</label>
@@ -708,7 +728,7 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
+
 <!-- Multiple Checkboxes -->
 <!--div class="control-group">
   <label class="control-label" for="checkboxes">Como você se sentiu?</label>
@@ -741,7 +761,7 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
+
 <!-- Multiple Radios -->
 <!--<div class="control-group">
   <label class="control-label" for="radios">Você conseguiu contar para alguém ou procurar ajuda?</label>
@@ -766,7 +786,7 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
+
 <!-- Multiple Radios (inline) -->
 <!-- <div class="control-group">
   <label class="control-label" for="radios">Você conhece seu agressor?</label>
@@ -783,7 +803,7 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
+
 <!-- Multiple Radios -->
 <!--div class="control-group">
 	<label class="control-label" for="radios">Se sim, qual é o tipo da relação de vocês?</label>
@@ -825,10 +845,10 @@ catch (PDOException $e) {
 			<input type="radio" name="relacao" id="relacao" value="Mora ou trabalha perto de mim">
 			Mora ou trabalha perto de mim
 		</label>
-  </div>-->
+  </div>
 </div>
 
-<br>
+
 <!-- Multiple Radios -->
 <!--<div class="control-group">
 	<label class="control-label" for="radios">Em que lugar isso aconteceu?</label>
@@ -865,7 +885,6 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
 <!-- Text input-->
 <!--<div class="control-group">
   <label class="control-label" for="outro">Outro lugar, especifique:</label>
@@ -875,7 +894,6 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
 <!-- Multiple Radios -->
 <!--<div class="control-group">
   <label class="control-label" for="radios">Qual a duração do fato?</label>
@@ -892,7 +910,6 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
 <!-- Multiple Radios -->
 <!--<div class="control-group">
   <label class="control-label" for="radios">Qual é a frequência que isso ocorre?</label>
@@ -916,7 +933,6 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
 <!-- Multiple Radios -->
 <!--<div class="control-group">
   <label class="control-label" for="radios">Voce gostaria de descrever um pouco o que aconteceu?</label>
@@ -933,7 +949,6 @@ catch (PDOException $e) {
   </div>
 </div>-->
 
-<br>
 <!-- Multiple Radios -->
 <!--<div class="control-group">
   <label class="control-label" for="radios">Você gostaria de buscar ajuda para auxilia-la com esse problema?</label>
@@ -966,71 +981,91 @@ catch (PDOException $e) {
   </div>
 </div>
 --->
-<br>
-
-	
+	<!--
 	<input type="submit" id="minhavoz" name="minhavoz" value="Enviar">
 			
 	
 	</fieldset>
 	</form>
+    -->
 
-	
-	
 	</div>
 	</section><!--end of questionnaire-->
 	
 	
-	 <section id="desabafo">
+	<!-- inicio do desabafo de outras mulheres -->
+	<section id="desabafosdeoutrasmulheres">
+        <div class="container">
+	       <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Desabafo de outras mulheres</h2>FAZER UMA DESCRIÇÃO PARA AQUI! </h3>
+                </div>
+            </div>
+	       
+		  <div class="row">
+		   <?php
+		   
+		   try {
+				$carrega = $dbConnection->prepare("SELECT * FROM `desabafos` ");
+				$carrega->execute();
+				
+				while ($desabafos = $carrega->fetch(PDO::FETCH_ASSOC)) {
+				    echo "<img src='img/logos/arrow.png' height='42' width='42' class='seta'>".$desabafos['assunto']."<br>";
+					echo $desabafos['texto']."<br><br>";
+				}
+			}
+			catch (PDOException $e) {
+			}
+		   
+		   ?>
+		   </div>
+	
+	    </div>
+	</section>
+	
+	
+	
+	 <section id="desabafo"> <!-- inicio do desabafo -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Desabafo</h2>FAZER UMA DESCRIÇÃO PARA AQUI! </h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-	
-	<form class="form-horizontal">
-	<fieldset>
+           
+	 <div class="col-lg-12">
+
 
 	<!-- Form Name - Meu Desabafo -->
 	<legend>Meu Desabafo</legend>
     <p class="help-block">Todos os dados estão sob sigilo</p>
-	
-	
-	<form action="index.php"  method="post">
-	<!-- Text input-->
-	<div class="control-group">
-		<label class="control-label" for="textinput">Assunto:</label>
-	
-	<div class="controls">
-		<input id="assunto" name="textinput" type="text" placeholder="Insira seu assunto" class="input-xlarge">
-	</div>
-	</div>
 
-	<!-- Textarea -->
-	<div class="control-group">
-		<label class="control-label" for="textarea" >Texto</label>
-	<div class="controls">    
-        <br>	
-		<textarea id="id_texto" name="textarea"></textarea>
-	</div>
-	</div>
-	
+	<form action="index.php"  method="Post" name="form_desabafo" >
 
-	<!-- Button -->
-	<div class="control-group">
-		<label class="control-label" for="singlebutton"></label>
-	<div class="controls">
-		<button id="btn_depoimento" type="submit" name="singlebutton" class="btn btn-primary">Enviar</button>
-	</div>
-	</div>
-	</form>
+	<div class="col-md-6">
+        <label class="form-group">Assunto:</label>
+         <div class="form-group">
+            <input class="form-control"   type="text" name="id_assunto" required placeholder="Digite o assunto *" />
+            <p class="help-block"></p>
+        </div>
+     
+  
     
-	</fieldset>
+	 <label class="form-group">Desabafo:</label>
+       <div class="form-group">
+         <textarea name="id_texto"  class="form-control" placeholder="Seu desabafo *"  required data-validation-required-message="Please enter a message."></textarea>
+         <p class="help-block text-danger"></p>
+        </div>
+      
+		<label class="control-label" for="singlebutton"></label>
+	   <div class="controls">
+		<button id="btn_depoimento" type="submit" name="btn_depoimento" class="btn btn-primary" class="form-group">Enviar</button>
+	   </div>
+	</div>
 	</form>
 	
+		</div>
+		
 		</div>
 	</section><!--end of Desabafo-->
 	

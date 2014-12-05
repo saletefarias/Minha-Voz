@@ -5,9 +5,27 @@ body {
 }
 
 .logo {
-   width:  150px;  
-  //height:  115px; 
-    height: auto;
+   width:  150px;   
+   height: auto;
+}
+
+.violencia{
+   color:#363636;
+}
+.violenciaInvertida{
+ color:#363636;
+ text-align: left;
+ text-decoration:none;
+}
+
+.violenciaInvertida:hover{
+ color:#A9A9A9;
+ text-align: left;
+ text-decoration:none;
+}
+
+.violencia:hover{
+   color:#A9A9A9;
 }
 
 .seta
@@ -30,6 +48,11 @@ p {
 
 p.large {
     font-size: 16px;
+}
+
+p.pergunta{
+   font-size: 16px;
+   color: #D15FEE;
 }
 
 a,
@@ -248,14 +271,14 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 50px 0;
+        padding: 25px 0;
         border: 0;
         background-color: transparent;
         -webkit-transition: padding .2s;
         -moz-transition: padding .2s;
         transition: padding .2s;
     }
-
+	
     .navbar-default .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .2s;
@@ -375,6 +398,8 @@ section h3.section-subheading {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     } 
+	
+		
 }
 
 .timeline {
@@ -557,7 +582,7 @@ section h3.section-subheading {
     .timeline>li {
         min-height: 170px;
     }
-
+	
     .timeline>li .timeline-panel {
         padding: 0 20px 20px 100px;
     }

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Diagnóstico</title>
+<title>O que estou passando?</title>
 <link href="css/decisionTree.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -10,8 +10,10 @@
 <script type="text/javascript" src="js/decisionTree.js"></script>
 </head>
 
-<body>
-Versão Teste
+<body class="index">
+
+ <a href="../index.php" class="page-scroll btn btn-xl" >Fechar</a>
+
 <div id="debug"></div>
 <div id="tree-window">
 	<div id="tree-slider"></div>

@@ -42,16 +42,15 @@ catch (PDOException $e) {
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <?php include 'head.php'?>
-<link href="css/decisionTree.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.scrollTo-1.3.3-min.js"></script>
-<script type="text/javascript" src="js/decisionTree.js"></script>   
+ 
 
 </head>
 
@@ -99,7 +98,7 @@ catch (PDOException $e) {
 			  
 			  <p class="large text-muted">O primeiro passo para sair da situação e ajudar a acabar com a violência contra a mulher é 
 			  cuidar de si mesma. Procure ficar bem e segura tanto física como psicologicamente. 
-			  Busque os serviços de apoio listados em  <a class="page-scroll" href="#violenciamulher">O que é violência contra a mulher</a>).</p>
+			  Busque os serviços de apoio listados em  <a class="page-scroll" href="#violenciamulher">O que é violência contra a mulher</a>.</p>
 			  
 			  <p class="large text-muted">
 			  Um outro passo importante é dar seu apoio a projetos que lutam pelo fim da violência contra a mulher.
@@ -153,26 +152,79 @@ catch (PDOException $e) {
 	</section>
   
      <!-- Nosso objetivo -->
-    <section id="nossoobjetivo" class="bg-light-gray">
+    <section id="nossavoz" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Nosso Objetivo</h2>
+                    <h2 class="section-heading">Nossa Voz</h2>
                 </div>
 				
-					  
-			  <p class="large text-muted">
-			     Bem vindo ao minha voz. Somos uma iniciativa que pretende assegurar a integridade e o bem estar psicológico, moral 
-			     e físico relacionados à questão de gênero.</p>
+		
+            <p class="large text-muted">
+			 Criamos esse espaço para que as mulheres se sintam à vontade para contar compartilhar com
+			 outras mulheres as experiências de violência que sofrem.
+            </p>
+			
+			 <p class="large text-muted">
+			 Se você chegou até aqui, provavelmente sofreu algum tipo violência contra a mulher ou viu acontecer com alguém próximo.
+			 Somos um espaço virtual para que você entenda melhor o que aconteceu, possa desabafar, saber seus direitos e possibilidades,
+			 buscar informações, compartilhar experiências com outras mulheres que sofreram coisas parecidas, ler depoimentos 
+			 de outras mulheres, enfim, saber que você não está só.
+			 </p>
+          
+		    <p class="pergunta">
+             Mas o que pode ser considerado violência contra a mulher?
+            </p>
+			
+			<p class="large text-muted">
+             Acreditamos que qualquer ação que desrespeite o bem estar moral, psicológico e 
+			 físico da mulher pode ser considerado uma forma de violência.
+			 </p>
+
+			 <p class="pergunta">
+             E o que devemos considerar para saber se uma ação é violenta ou não?
+			 Como sabemos se alguma ação é uma violência contra a mulher?
+			 </p>
              
-			  <p class="large text-muted">
-				 Também buscamos promover a conscientização sobre os 
-			     direitos que envolvem questões de genero.
-              </p>
+			 <p class="large text-muted">
+             Para o Minha Voz, o que interessa é o ponto de vista da mulher que sofreu a violência. 
+			 Se você sentiu uma ação como violenta, é porque ela é assim para você. Você não precisa da aprovação de ninguém para dizer 
+			 se o seu sofrimento tem valor ou não. Esse sofrimento existe, e é tudo o que importa para nós.
+             </p>
+			  
+			 <p class="pergunta">
+             Por que contar o que aconteceu comigo é importante?
+             </p/>
 			 
+			 <p class="large text-muted">
+              A violência contra a mulher é um problema no mundo todo. Se considerarmos todas as formas de violência, desde as que nos 
+			  fazem ficar mal emocionalmente, até as que nos machucam fisicamente, todas as mulheres já sofreram ou correm o risco de 
+			  sofrer algum tipo de violência.</p>
+
 			  <p class="large text-muted">
-				Isso significa, em primeiro lugar, nosso compromisso com o bem estar das mulheres, mas não só delas. 
-				Todas as pessoas, independente de sua opção sexual ou sexo, são bem vindas.
+              Colaborar para o fim da violência é uma tarefa de todas nós. Contar sua história é importante por dois motivos:
+			  </p>
+
+			  <p class="large text-muted">
+              1. Ao responder às perguntas do  <a href="#diagnostico" class="page-scroll" title="Acho Que Sofri Violência e Agora?">Acho Que Sofri Violência e Agora?</a>  você conseguirá entender melhor o que aconteceu com você. Quando você entende melhor isso, é possível saber mais sobre quais são os diferentes tipos de violência contra a mulher, quais são os seus direitos, quais são as coisas que você pode fazer para buscar ajuda, como se proteger, e como voltar a ficar bem, tanto fisica como psicologicamente, como combater a violência de modo geral.
+              </p>
+			  
+			  <p class="large text-muted">
+              2. Quanto mais informações existirem sobre a violência contra a mulher, será mais fácil para o governo e organizações pensarem e proporem ações para combater a violência. Sabe-se que geralmente as mulheres não conseguem denunciar, por uma série de motivos complicados que devemos entender e respeitar. Por causa disso, não se tem uma noção real da gravidade do problema e de quantas mulheres sofrem com a violência. Quando você conta o que aconteceu com você no Minha Voz, conseguimos ter mais dados para entender de modo cada vez mais preciso como acontece a violência contra a mulher no Brasil. Essas informações são fundamentais para o combate à violência.
+              </p>
+			  
+			  <p class="pergunta">
+              Mas o que acontece quando eu conto minha história aqui? Quem fica sabendo disso?
+              </p>
+			  
+			  <p class="large text-muted">
+              Todas as suas informações são anônimas no site. Nosso objetivo é oferecer um espaço onde as mulheres possam se sentir
+			  bem para contar suas experiências que tenham a ver com violência contra a mulher. Portanto, o que você conta aqui não vira uma investigação da polícia ou legal. Ninguém tem acesso a suas informações.
+              </p>
+			  
+			  <p class="large text-muted">
+              No entanto, seus dados serão usados de forma anônima como informações para construir um retrato mais preciso da 
+			  violência contra a mulher no Brasil.
 			  </p>
 			  
             </div>
@@ -222,7 +274,7 @@ catch (PDOException $e) {
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                               <a href="http://clique180.org.br/" target="_blank">  <img class="img-circle img-responsive" src="img/projetos/click180.jpg" alt=""></a>
+                               <a href="http://clique180.org.br/" target="_blank" class="violencia">  <img class="img-circle img-responsive" src="img/projetos/click180.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -236,25 +288,26 @@ catch (PDOException $e) {
 									</p>
                                 </div>
                             </div>
+							</a>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                               <a href="https://sistema3.planalto.gov.br//spmu/atendimento/atendimento_mulher.php" target="_blank"><img class="img-circle img-responsive" src="img/projetos/rede.jpg"/></a>
+                               <a href="https://sistema3.planalto.gov.br//spmu/atendimento/atendimento_mulher.php" target="_blank" ><img class="img-circle img-responsive" src="img/projetos/rede.jpg"/></a>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Rede de enfrentamento de violência contra a mulher</h4>
+                                   <a href="https://sistema3.planalto.gov.br//spmu/atendimento/atendimento_mulher.php" class="violenciaInvertida"><h4>Rede de enfrentamento de violência contra a mulher</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">O conceito de rede de enfrentamento à violência contra as 
+                                    <p class="text-muted" >O conceito de rede de enfrentamento à violência contra as 
 									mulheres diz respeito à atuação articulada entre as instituições/serviços governamentais,
 									não-governamentais e a comunidade, </p>
                                 </div>
-                            </div>
+                            </div></a>
                         </li>
 						<li>
                             <div class="timeline-image">
-                               <a href="http://chegadefiufiu.com.br/" target="_blank">  <img class="img-circle img-responsive" src="img/projetos/chegadefiufiu.jpg" alt=""></a>
+                               <a href="http://chegadefiufiu.com.br/" target="_blank" class="violenciaInvertida">  <img class="img-circle img-responsive" src="img/projetos/chegadefiufiu.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -267,6 +320,7 @@ catch (PDOException $e) {
 									</p>
                                 </div>
                             </div>
+							</a>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
@@ -316,7 +370,7 @@ catch (PDOException $e) {
             <br><br>
 			<div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Tive Meu Direito Desrespeitado</h2>
+                    <h2 class="section-heading">Depoimentos</h2>
                 </div>
             </div>
 			<br><br><br>
@@ -328,21 +382,22 @@ catch (PDOException $e) {
                     </span>-->
 					<img src="img/logos/logo_bola.png"/>
                     <h4 class="service-heading">Quero Desabafar</h4>
-					<br>
-                    <a class="page-scroll" href="#desabafo"><p class="text-muted">FAZER UMA PEQUENA DESCRIÇÃO PARA O DESABAFO</p></a>
+                    <a class="page-scroll" href="#desabafo"><p class="text-muted">Procurando um lugar pra contar a sua história ou de alguém? clique aqui</p></a>
                 </div>
 				
                 <div class="col-md-4">
                    	<img src="img/logos/computer.png"/>
                     <h4 class="service-heading">Desabafo de Outras Mulheres</h4>
-                    <a class="page-scroll" href="#desabafosdeoutrasmulheres"><p class="text-muted">FAZER UMA PEQUENA DESCRIÇÃO PARA O FÓRUM</p></a>
+                    <a class="page-scroll" href="#desabafosdeoutrasmulheres"><p class="text-muted">Você não está sozinha. Leia o que outras mulheres disseram</p></a>
                 </div>
 				
 				  <div class="col-md-4">
                     <img src="img/logos/interrogacao.png"/>
                     <h4 class="service-heading">Questionário</h4>
-					<br>
-                   <a class="page-scroll" href="#questionario"><p class="text-muted">FAZER A DESCRIÇÃO DO QUESTIONÁRIO</p></a>
+                   <a class="page-scroll" href="#questionario"><p class="text-muted">
+				   Entenda o que aconteceu com você e colabore com o Minha Voz. 
+				   Responda ao nosso questionário, não é necessário identificação.
+				   </p></a>
                 </div>
             </div>
         </div>

@@ -1,3 +1,12 @@
+<!--- Copyright 2014 de Daniela Silveira Rozados da Silva, Rafael Reis da Silva, Salete Silva Farias. 
+Este arquivo é parte do programa MINHA VOZ. O MINHA VOZ é um software livre; você pode redistribuí-lo 
+e/ou modificá-lo dentro dos termos da [GNU General Public License OU GNU Affero General Public License] 
+como publicada pela Fundação do Software Livre (FSF); na versão 3 da Licença. Este programa é distribuído
+ na esperança que possa ser útil, mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO a
+ qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a licença para maiores detalhes. Você deve ter recebido 
+ uma cópia da [GNU General Public License OU GNU Affero General Public License], sob o título "LICENSE", 
+ junto com este programa, se não, acesse https://github.com/saletefari…/Minha-Voz/blob/master/LICENSE 
+ ou http://www.gnu.org/licenses/ --->
 <?php session_start();
 try {
 	$dbConnection = new PDO("mysql:host=localhost;dbname=minhavoz","root","Root");
@@ -40,6 +49,7 @@ catch (PDOException $e) {
 }   
     
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="pt-BR">
@@ -340,7 +350,7 @@ catch (PDOException $e) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Anonimato</h2>Você está sob sigilo. <br></h3>
+                    <h2 class="section-heading">Anonimato</h2>Você está sob sigilo. <br>
                 </div>
             </div>
             <div class="row">
@@ -376,12 +386,10 @@ catch (PDOException $e) {
 			<br><br><br>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <!--<span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>-->
+					
 					<img src="img/logos/logo_bola.png"/>
-                    <h4 class="service-heading">Quero Desabafar</h4>
+					
+					<h4 class="service-heading">Quero Desabafar</h4>
                     <a class="page-scroll" href="#desabafo"><p class="text-muted">Procurando um lugar pra contar a sua história ou de alguém? clique aqui</p></a>
                 </div>
 				
@@ -436,7 +444,7 @@ catch (PDOException $e) {
 	
 	
 	
-	 <section id="desabafo"> <!-- inicio do desabafo -->
+	 <section id="questionario"> <!-- inicio do questionario -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -445,10 +453,6 @@ catch (PDOException $e) {
             </div>
            
 	 <div class="col-lg-12">
-	 
-	 
-    <section id="questionario">
-    <!-- Form Name -->
     <legend>Colabore! Sua voz pode ser libertadora!</legend>
 
     <div class="control-group">
@@ -829,13 +833,18 @@ catch (PDOException $e) {
     
 
 	</div>
-	</section><!--end of questionnaire-->
+	</section><!--fim do questionario-->
 
-
-	<!-- Form Name - Meu Desabafo -->
-	<legend>Meu Desabafo</legend>
-    <p class="help-block">Todos os dados estão sob sigilo</p>
-
+	 <section id="desabafo"> <!-- inicio do questionario -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">MEU DESABAFO</h2>Você está sob sigilo. </h2>
+					
+                </div>
+            </div>
+           
+	 <div class="col-lg-12">
 	<form action="index.php"  method="Post" name="form_desabafo" >
 
 	<div class="col-md-6">
@@ -855,7 +864,7 @@ catch (PDOException $e) {
       
 		<label class="control-label" for="singlebutton"></label>
 	   <div class="controls">
-		<button id="btn_depoimento" type="submit" name="btn_depoimento" class="btn btn-primary" class="form-group">Enviar</button>
+		<button id="btn_depoimento" type="submit" name="btn_depoimento" class="btn btn-xl" class="form-group">Enviar</button>
 	   </div>
 	</div>
 	</form>

@@ -1,3 +1,12 @@
+<!--- Copyright 2014 de Daniela Silveira Rozados da Silva, Rafael Reis da Silva, Salete Silva Farias. 
+Este arquivo é parte do programa MINHA VOZ. O MINHA VOZ é um software livre; você pode redistribuí-lo 
+e/ou modificá-lo dentro dos termos da [GNU General Public License OU GNU Affero General Public License] 
+como publicada pela Fundação do Software Livre (FSF); na versão 3 da Licença. Este programa é distribuído
+ na esperança que possa ser útil, mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO a
+ qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a licença para maiores detalhes. Você deve ter recebido 
+ uma cópia da [GNU General Public License OU GNU Affero General Public License], sob o título "LICENSE", 
+ junto com este programa, se não, acesse https://github.com/saletefari…/Minha-Voz/blob/master/LICENSE 
+ ou http://www.gnu.org/licenses/ --->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

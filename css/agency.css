@@ -35,10 +35,16 @@ body {
 
 .text-muted {
     color: #777;
+	text-decoration:none;
+}
+.page-scroll .text-muted
+{
+  	text-decoration:none;
 }
 
 .text-primary {
     color: #fed136;
+	text-decoration:none;
 }
 
 p {
@@ -835,3 +841,4 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+

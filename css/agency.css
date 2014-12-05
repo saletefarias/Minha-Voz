@@ -9,6 +9,10 @@ body {
    height: auto;
 }
 
+.fundoarvore {
+ color: #906097; 
+}
+
 .violencia{
    color:#363636;
 }
@@ -300,7 +304,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color:#906097; //#800080;
+        background-color:#906097; 
     }
 
     .navbar-default.navbar-shrink .navbar-brand {

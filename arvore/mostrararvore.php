@@ -12,17 +12,21 @@ como publicada pela Fundação do Software Livre (FSF); na versão 3 da Licença
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>O que estou passando?</title>
-<link href="css/decisionTree.css" rel="stylesheet" type="text/css" />
+<link href="css/arvore.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.scrollTo-1.3.3-min.js"></script>
 <script type="text/javascript" src="js/decisionTree.js"></script>
 </head>
 
-<body class="index">
+<body class="fundoarvore">
 
- <a href="../index.php" class="page-scroll btn btn-xl" >Fechar</a>
 
+     
+     <a href="../index.php"><img src="img/home.png" class="voltar"/></a>
+     <h1 class="titulo">Sofri violência, e agora? <br>Quero entender mais o que aconteceu comigo.</h1>
+
+  
 <div id="debug"></div>
 <div id="tree-window">
 	<div id="tree-slider"></div>

@@ -276,7 +276,6 @@ catch (PDOException $e) {
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Violência Contra a mulher</h2>
-                    <h3 class="section-subheading text-muted">Descrição</h3>
                 </div>
             </div>
             <div class="row">
@@ -880,7 +879,6 @@ catch (PDOException $e) {
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Quem Somos</h2>
-                    <h3 class="section-subheading text-muted">Definicação?</h3>
                 </div>
             </div>
             <div class="row">
@@ -989,7 +987,7 @@ catch (PDOException $e) {
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/minhavozeminhaforca?fref=ts"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>

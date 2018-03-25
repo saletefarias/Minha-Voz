@@ -39,16 +39,16 @@ body {
 
 .text-muted {
     color: #777;
-	text-decoration:none;
+    text-decoration:none;
 }
 .page-scroll .text-muted
 {
-  	text-decoration:none;
+    text-decoration:none;
 }
 
 .text-primary {
     color: #fed136;
-	text-decoration:none;
+    text-decoration:none;
 }
 
 p {
@@ -213,7 +213,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
-	font-family: Arial,Montserrat,"Helvetica Neue",Helvetica,sans-serif;
+    font-family: Arial,Montserrat,"Helvetica Neue",Helvetica,sans-serif;
 }
 
 .navbar-default .navbar-brand {
@@ -247,14 +247,21 @@ fieldset[disabled] .btn-xl.active {
     background-color: #990033 ;
 }
 
+.navbar-default .nav li {
+    height:70px;
+    display: table;
+}
+
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-	 border-color: #000000;
+     border-color: #000000;
     color:  #CBBDF2;// #CC0066;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /*botoes do menu ativos*/
@@ -288,7 +295,7 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: padding .2s;
         transition: padding .2s;
     }
-	
+    
     .navbar-default .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .2s;
@@ -303,12 +310,19 @@ fieldset[disabled] .btn-xl.active {
 /*navbar grande - fundo estilo banner */
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 3px 0;
         background-color:#906097; 
     }
 
+    .navbar-default.navbar-shrink .navbar-brand img {
+        margin-top: -13px;
+        margin-left: 30px;
+        margin-right: 10px;
+        width: 85px;
+    }
+
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
 }
 
@@ -408,8 +422,8 @@ section h3.section-subheading {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     } 
-	
-		
+    
+        
 }
 
 .timeline {
@@ -592,7 +606,7 @@ section h3.section-subheading {
     .timeline>li {
         min-height: 170px;
     }
-	
+    
     .timeline>li .timeline-panel {
         padding: 0 20px 20px 100px;
     }
@@ -845,4 +859,3 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
-
